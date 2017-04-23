@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="F5O-V7-gpt">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--Second View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="SecondViewController" id="BYZ-38-t0r" customClass="SecondViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1SY-M9-g1Y"/>
+                        <viewControllerLayoutGuide type="bottom" id="EA4-i3-Q6w"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6ob-Uh-Qdt">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Default" translatesAutoresizingMaskIntoConstraints="NO" id="5dw-BP-XNR">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EA4-i3-Q6w" firstAttribute="top" secondItem="5dw-BP-XNR" secondAttribute="bottom" id="7DF-Gb-hHv"/>
+                            <constraint firstAttribute="trailing" secondItem="5dw-BP-XNR" secondAttribute="trailing" id="LMr-yi-CSp"/>
+                            <constraint firstItem="5dw-BP-XNR" firstAttribute="top" secondItem="6ob-Uh-Qdt" secondAttribute="top" id="ZsP-kC-Fvh"/>
+                            <constraint firstItem="5dw-BP-XNR" firstAttribute="leading" secondItem="6ob-Uh-Qdt" secondAttribute="leading" id="fKE-dC-SRb"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--My Navigation Controller-->
+        <scene sceneID="jgV-N3-qwp">
+            <objects>
+                <navigationController id="F5O-V7-gpt" customClass="MyNavigationController" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NEc-gt-n5w">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="aNd-US-q6Y" kind="relationship" relationship="rootViewController" id="NGE-Pj-dnU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2SS-2g-zCp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-20" y="638"/>
+        </scene>
+        <!--First View Controller-->
+        <scene sceneID="RAm-bW-ZUz">
+            <objects>
+                <viewController id="aNd-US-q6Y" customClass="FirstViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="m36-tH-paD"/>
+                        <viewControllerLayoutGuide type="bottom" id="PxZ-iY-dsL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="deS-te-oEE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Default" translatesAutoresizingMaskIntoConstraints="NO" id="OzV-0F-qJc">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="OzV-0F-qJc" firstAttribute="top" secondItem="deS-te-oEE" secondAttribute="top" id="FjJ-UG-pQf"/>
+                            <constraint firstItem="OzV-0F-qJc" firstAttribute="leading" secondItem="deS-te-oEE" secondAttribute="leading" id="Gkq-qN-FMe"/>
+                            <constraint firstItem="PxZ-iY-dsL" firstAttribute="top" secondItem="OzV-0F-qJc" secondAttribute="bottom" id="YXm-Yp-P2I"/>
+                            <constraint firstAttribute="trailing" secondItem="OzV-0F-qJc" secondAttribute="trailing" id="mpo-71-G5s"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="utP-d8-R1V"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C5Z-6c-chS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="344" y="638"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Default" width="320" height="568"/>
+    </resources>
+</document>
